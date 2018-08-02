@@ -7,6 +7,6 @@
 def main():
     '''Sum of two numbers'''
     data = input()
-    print(int(data[0]) + int(data[1]))
+    print(int(data[0])+int(data[1]))
 if __name__ == "__main__":
     main()
