@@ -10,8 +10,7 @@ def main():
     string = input()
     countofvowels = 0
     for char in string:
-        if char == 'a' or char == 'e' or char == 'i' \
-        or char == 'o' or char == 'u':
+        if char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u':
             countofvowels += 1
     print(countofvowels)
 if __name__ == "__main__":
