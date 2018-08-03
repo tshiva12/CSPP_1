@@ -18,7 +18,7 @@ def main():
     if res ** 3 != value:
         print(str(value) + " " + "is not a perfect cube")
     else:
-        print("cube root of " + " " + str(value) + " " + "is" + " " + str(res))
+        print(str(value) + " " + "is a perfect cube")
     # watch out for the data type of value stored in s
     # your code starts here
 
