@@ -24,7 +24,6 @@ def main():
         else:
             high = res
         res = (high+low)/2.0
-    print(count)
     print(res)
 if __name__ == "__main__":
     main()
