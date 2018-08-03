@@ -6,11 +6,12 @@ def main():
     val = int(input())
     epsilon = 0.01
     guess = 0.0
-    increment = 0.0001
+    increment = 0.001
     num = 0
     while abs(guess**2 -val) >= epsilon:
         guess += increment
         num += 1
+    print("num = ", num)
     if abs(guess**2 - val) >= epsilon:
         print("Failed  on square root of", val)
     else:
