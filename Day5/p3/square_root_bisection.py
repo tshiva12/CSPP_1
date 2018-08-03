@@ -12,8 +12,6 @@
 def main():
     '''Bisection method'''
     value = int(input())
-    # epsilon and step are initialized
-    # don't change these values
     epsilon = 0.01
     count = 0
     low = 0.0
@@ -28,7 +26,5 @@ def main():
         res = (high+low)/2.0
     print(count)
     print(res)
-    # your code starts here
-
 if __name__ == "__main__":
     main()
