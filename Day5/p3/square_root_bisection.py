@@ -18,7 +18,7 @@ def main():
     count = 0
     low = 1.0
     high = value
-    res = high+low/2.0
+    res = (high+low)/2.0
     while abs(res**2 - value) >= epsilon:
         count += 1
         if res**2 < value:
