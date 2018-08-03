@@ -12,7 +12,7 @@ def main():
     if abs(guess**2 - val) >= epsilon:
         print("Failed  on square root of", val)
     else:
-        print(guess, 'is close to the squareroot of', val)
+        print(guess)
     #your code here
 
 if __name__ == "__main__":
