@@ -1,6 +1,6 @@
 '''
 Given a  number int_input, find the product of all the digits
-example: 
+example:
     input: 123
     output: 6
 '''
@@ -13,7 +13,7 @@ def main():
     if num == 0:
         print(num)
     else:
-        while (num != 0):
+        while num != 0:
             rem = num%10
             prd *= rem
             num //= 10
