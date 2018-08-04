@@ -7,16 +7,21 @@ def main():
     '''
     Read string from the input, store it in variable str_input.
     '''
-    string = input()
-    string1 = ['!', '@', '#', '$', '%', '^', '&', '*']
-    newstr = ""
-    len1 = len(string)
-    temp = ""
+    str1 = input()
+    len1 = len(str1)
+    str2 = ['!', '@', '#', '$', '%', '^', '&', '*']
+    res = ""
     for i in range(0, len1, 1):
-        temp = string[i]
-        if temp == string1[i]:
-            temp == " "
-            newstr += temp
-    print(newstr)
+         temp = str1[i]
+         for j in range(i,len1,1):
+            if temp != str2[j]:
+                temp != str2[j]
+                temp += " "
+                res = temp
+         res += temp       
+    print(res) 
+    
+
+
 if __name__ == "__main__":
     main()
