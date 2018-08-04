@@ -12,16 +12,12 @@ def main():
     str2 = ['!', '@', '#', '$', '%', '^', '&', '*']
     res = ""
     for i in range(0, len1, 1):
-         temp = str1[i]
-         for j in range(i,len1,1):
+        temp = str1[i]
+        for j in range(i, len1, 1):
             if temp != str2[j]:
-                temp != str2[j]
                 temp += " "
                 res = temp
-         res += temp       
-    print(res) 
-    
-
-
+        res += temp
+    print(res)
 if __name__ == "__main__":
     main()
