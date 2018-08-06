@@ -5,7 +5,7 @@
 def evalQuadratic(val1, val2, val3, val4):
     ''' quadratic expression'''
     res = val1*val4**2 + 2*val2*val4 + val3
-    print(res)
+    return res
 def main():
     ''' quadratic expression'''
     data = input()
