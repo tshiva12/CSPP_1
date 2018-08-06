@@ -2,7 +2,7 @@
 # Write a Python function, evalQuadratic(a, b, c, x),
 # that returns the value of the quadratic a . x 2 + b . x + c
 # This function takes in four numbers and returns a single number.
-def evalQuadratic(val1, val2, val3, val4):
+def evalquadratic(val1, val2, val3, val4):
     ''' quadratic expression'''
     res = val1*val4**2 + 2*val2*val4 + val3
     return res
@@ -18,6 +18,6 @@ def main():
             data[val4] = int(float(str(data[val4])))
         else:
             data[val4] = data[val4]
-    print(evalQuadratic(data[0], data[1], data[2], data[3]))
+    print(evalquadratic(data[0], data[1], data[2], data[3]))
 if __name__ == "__main__":
     main()
