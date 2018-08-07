@@ -20,5 +20,4 @@ def main():
     val = input()
     print(sumofdigits(int(val)))
 if __name__ == "__main__":
-    
     main()
