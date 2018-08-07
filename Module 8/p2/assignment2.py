@@ -14,8 +14,7 @@ def sumofdigits(num):
     # Your code here
     if num == 0:
         return 0
-    if num != 0:
-        return (num%10) + sumofdigits(num//10)
+    return (num%10) + sumofdigits(num//10)
 def main():
     '''sumofdigits'''
     val = input()
