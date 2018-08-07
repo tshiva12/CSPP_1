@@ -20,6 +20,5 @@ def main():
     val = input()
     print(sumofdigits(int(val)))
 if __name__ == "__main__":
-    import sys
-    sys.setrecursionlimit(255000)
+    
     main()
