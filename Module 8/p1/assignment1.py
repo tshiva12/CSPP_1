@@ -8,9 +8,9 @@
 def factorial(num):
     '''the factorial of n'''
     # Your code here
-    if num == 1:
+    if num == 0:
         return 1
-    if num != 1:
+    if num != 0:
         return num * factorial(num-1)
 def main():
     '''fact'''
