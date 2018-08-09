@@ -15,7 +15,7 @@ def main():
     data = data.split()
     atup = ()
     for val in data:
-        atup += ([val], )
+        atup += (val, )
     print(oddtuples(atup))
 if __name__ == "__main__":
     main()
