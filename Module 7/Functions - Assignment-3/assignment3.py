@@ -64,9 +64,9 @@ def calculate(month, balance, payablebal, monthlyinterestrate):
 def payingdebtoffinayear(balance, annualinterestrate):
     '''balance'''
     newbalance = balance
-    monthlyinterestrate = (annualinterestrate) / 12.0
+    monthlyinterestrate = (annualinterestrate) / 12
     monthlypaymentlowerbound = balance / 12
-    monthlypaymentupperbound = (balance * ((1 + monthlyinterestrate)**12)) / 12.0
+    monthlypaymentupperbound = (balance * ((1 + monthlyinterestrate)**12)) / 12
     epsilon = 0.0001
     payablebal = (monthlypaymentlowerbound + monthlypaymentupperbound) / 2
     month = 0
