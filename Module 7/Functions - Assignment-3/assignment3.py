@@ -80,13 +80,13 @@ def payingdebtoffinayear(balance, annualinterestrate):
             monthlypaymentupperbound = payablebal
         payablebal = (monthlypaymentlowerbound + monthlypaymentupperbound)/2.0
     payablebal = round(payablebal, 2)
-    return("lower payment: " + str(payablebal))
+    return str(payablebal)
 def main():
     '''balance'''
     data = input()
     # data = "4773 0.2"
     data = data.split(' ')
     data = list(map(float, data))
-    print("Lowest payment ", str(payingdebtoffinayear(data[0], data[1])))
+    print("Lowest Payment ", str(payingdebtoffinayear(data[0], data[1])))
 if __name__ == "__main__":
     main()
