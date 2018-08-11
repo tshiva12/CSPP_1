@@ -23,7 +23,8 @@ def isValidWord(word, hand, wordList):
     	if index in hand:
     		if word in wordList:
     			return True
-    		return False
+    		else:
+    			return False
 
 
 def main():
