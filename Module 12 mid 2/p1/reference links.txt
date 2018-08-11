@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/13675296/python-typeerror-unhashable-type-list
+https://www.w3schools.com/python/python_ref_functions.asp
+https://www.geeksforgeeks.org/python-convert-list-tuples-dictionary/
