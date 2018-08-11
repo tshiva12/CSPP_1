@@ -53,27 +53,34 @@
 # value as you did in Assignment 2.
 
 
+def calculate(month, balance, payablebal, monthlyinterestrate):
+    '''calculate'''
+    while month < 12:
+        unpaidbalance = balance - payablebal
+        balance = unpaidbalance + (monthlyinterestrate * unpaidbalance)
+        month += 1
+    return balance
 
 def payingdebtoffinayear(balance, annualinterestrate):
     '''balance'''
     newbalance = balance
     monthlyinterestrate = (annualinterestrate) / 12.0
-    monthlypaymentlowerbound = newbalance / 12
-    monthlypaymentupperbound = (newbalance * (1 + monthlyinterestrate)**12) / 12.0
-    epsilon = 0.0001
-    while abs(balance > epsilon):
-        num = (monthlypaymentlowerbound + monthlypaymentupperbound) / 2
+    monthlypaymentlowerbound = balance / 12
+    monthlypaymentupperbound = (balance * ((1.0 + monthlyinterestrate)**12)) / 12.0
+    epsilon = 0.01
+    payablebal = (monthlypaymentlowerbound + monthlypaymentupperbound) / 2.0
+    month = 0
+    while abs(balance) >= epsilon:
         balance = newbalance
-        for _ in range(12):
-            res = balance - num
-            balance = res + (monthlyinterestrate * res)
-            if balance > epsilon:
-                monthlypaymentlowerbound = num
-            elif balance < -epsilon:
-                monthlypaymentupperbound = num
-            else:
-                break
-    return str(round(num, 2))
+        month = 0
+        balance = calculate(month, balance, payablebal, monthlyinterestrate)
+        if balance > 0:
+            monthlypaymentlowerbound = payablebal
+        else:
+            monthlypaymentupperbound = payablebal
+        payablebal = (monthlypaymentlowerbound + monthlypaymentupperbound)/2.0
+    payablebal = round(payablebal, 2)
+    return("lower payment: " + str(payablebal))
 def main():
     '''balance'''
     data = input()
