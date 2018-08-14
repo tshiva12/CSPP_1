@@ -62,7 +62,7 @@ def hand_rank(hand):
         return 2
     if is_straight(hand):
         return 1
-    return 0
+    
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
@@ -78,6 +78,7 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
+    return 0
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
