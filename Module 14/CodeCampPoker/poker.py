@@ -30,9 +30,9 @@ def is_straight(hand):
             newhand.append(int(hand[element][0]))
     newhand.sort()
     for element in range(count-1):
-        if newhand[element+1] - newhand[element] == 1:
-            return True
-    return False
+        if newhand[element+1] - newhand[element] != 1:
+            return False
+    return True
 
 def is_flush(hand):
     '''
@@ -45,9 +45,9 @@ def is_flush(hand):
     '''
     count = len(hand)
     for element in range(count - 1):
-        if hand[element][1] == hand[element+1][1]:
-            return True
-    return False
+        if hand[element][1] != hand[element+1][1]:
+            return False
+    return True
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
