@@ -3,7 +3,7 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-def sort(hand):
+def new(hand):
     '''Appending rank'''
     count = len(hand)
     newhand = []
@@ -32,9 +32,9 @@ def is_straight(hand):
         Write the code for it and return True if it is a straight else return False
     '''
     count = len(hand)
-    sortlist = sorted(sort(hand))
+    newlist = sorted(new(hand))
     for element in range(count-1):
-        if sortlist[element+1] - sortlist[element] != 1:
+        if newlist[element+1] - newlist[element] != 1:
             return False
     return True
 
@@ -56,9 +56,9 @@ def is_flush(hand):
 def is_fourofakind(hand):
     ''' fourofakind have same number cards of four and one different'''
     cnt = 0
-    sortlist = sorted(sort(hand))
-    for i in range(len(sortlist)-3):
-        if sortlist[i] == sortlist[i+1] == sortlist[i+2] == sortlist[i+3]:
+    newlist = sorted(new(hand))
+    for i in range(len(newlist)-3):
+        if newlist[i] == newlist[i+1] == newlist[i+2] == newlist[i+3]:
             cnt += 1
     if cnt == 1:
         return True
@@ -66,9 +66,9 @@ def is_fourofakind(hand):
 def is_threeofakind(hand):
     '''threeofakind have same number cards of three and two different'''
     count = 0
-    sortlist = sorted(sort(hand))
-    for i in range(len(sortlist)-2):
-        if sortlist[i] == sortlist[i+1] == sortlist[i+2]:
+    newlist = sorted(new(hand))
+    for i in range(len(newlist)-2):
+        if newlist[i] == newlist[i+1] == newlist[i+2]:
             count += 1
     if count == 1:
         return True
@@ -76,17 +76,17 @@ def is_threeofakind(hand):
 
 def is_onepair(hand):
     '''Only onepair of cards are same in number'''
-    sortlist = sorted(sort(hand))
-    sortlist1 = set(sortlist)
-    if len(sortlist) - len(sortlist1) == 1:
+    newlist = sorted(new(hand))
+    newlist1 = set(newlist)
+    if len(newlist) - len(newlist1) == 1:
         return True
     return False
 
 def is_twopair(hand):
     '''It have two pairs of same cards and one different'''
-    sortlist = sorted(sort(hand))
-    sortlist1 = set(sortlist)
-    if len(sortlist) - len(sortlist1) == 2:
+    newlist = sorted(new(hand))
+    newlist1 = set(newlist)
+    if len(newlist) - len(newlist1) == 2:
         return True
     return False
 
@@ -94,10 +94,10 @@ def is_fullhouse(hand):
     '''It have three of same rank and two of same rank'''
     count = 0
     i = 0
-    sortlist = sorted(sort(hand))
-    if sortlist[i] == sortlist[i+1] == sortlist[i+2] or sortlist[i+3] == sortlist[i+4]:
+    newlist = sorted(new(hand))
+    if newlist[i] == newlist[i+1] == newlist[i+2] or newlist[i+3] == newlist[i+4]:
         count += 1
-    elif sortlist[i+3] == sortlist[i+4] and sortlist[i] == sortlist[i+1] == sortlist[i+2]:
+    elif newlist[i+3] == newlist[i+4] and newlist[i] == newlist[i+1] == newlist[i+2]:
         count += 1
     if count == 1:
         return True
