@@ -111,22 +111,22 @@ def hand_rank(hand):
         The first version should identify if the given hand is a straight
         or a flush or a straight flush.
     '''
-    if is_threeofakind(hand):
-        return 3
-    if is_onepair(hand):
-        return 1
-    if is_twopair(hand):
-        return 2
-    if is_fullhouse(hand):
-        return 6
-    if is_fourofakind(hand):
-        return 7
     if is_straight(hand) and is_flush(hand):
         return 8
+    if is_fourofakind(hand):
+        return 7
+    if is_fullhouse(hand):
+        return 6
     if is_flush(hand):
         return 5
     if is_straight(hand):
         return 4
+    if is_threeofakind(hand):
+        return 3
+    if is_twopair(hand):
+        return 2
+    if is_onepair(hand):
+        return 1
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
