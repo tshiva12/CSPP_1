@@ -105,7 +105,7 @@ def is_fullhouse(hand):
         return True
     return False
 
-def is_highcard(hand):
+'''def is_highcard(hand):
     count = 0
     newlist = sorted(new(hand))
     len1 = len(newlist)
@@ -115,7 +115,7 @@ def is_highcard(hand):
     if count == 5:
         if max(count):
             return True
-    return False
+    return False'''
 
 def hand_rank(hand):
     '''
@@ -125,8 +125,8 @@ def hand_rank(hand):
         The first version should identify if the given hand is a straight
         or a flush or a straight flush.
     '''
-    if is_highcard(hand):
-        return 9
+    '''if is_highcard(hand):
+                    return 9'''
     if is_threeofakind(hand):
         return 6
     if is_onepair(hand):
