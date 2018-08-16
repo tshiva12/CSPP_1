@@ -87,8 +87,7 @@ def is_twopair(hand):
     newlist = sorted(new(hand))
     newlist1 = newlist.copy()
     if len(newlist) - len(newlist1) == 2:
-        if len(newlist) > len(newlist1):
-            return True
+        return True
     return False
 
 def is_fullhouse(hand):
