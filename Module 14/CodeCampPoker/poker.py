@@ -106,9 +106,10 @@ def is_fullhouse(hand):
 def is_highcard(hand):
     '''which have highest card in set of five cards'''
     newlist = sorted(new(hand))
-    if max(newlist) == 14:
-        return True
+    if len(newlist) == 5 and not is_flush(hand):
+        return max(newlist)/100
     return False
+
 
 def hand_rank(hand):
     '''
@@ -119,24 +120,22 @@ def hand_rank(hand):
         or a flush or a straight flush.
     '''
     if is_straight(hand) and is_flush(hand):
-        return 9
-    if is_fourofakind(hand):
         return 8
-    if is_fullhouse(hand):
+    if is_fourofakind(hand):
         return 7
-    if is_flush(hand):
+    if is_fullhouse(hand):
         return 6
-    if is_straight(hand):
+    if is_flush(hand):
         return 5
-    if is_threeofakind(hand):
+    if is_straight(hand):
         return 4
-    if is_twopair(hand):
+    if is_threeofakind(hand):
         return 3
-    if is_onepair(hand):
+    if is_twopair(hand):
         return 2
-    if is_highcard(hand):
+    if is_onepair(hand):
         return 1
-    return 0
+    return is_highcard(hand)
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
