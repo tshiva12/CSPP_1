@@ -85,9 +85,11 @@ def is_onepair(hand):
 def is_twopair(hand):
     '''It have two pairs of same cards and one different'''
     newlist = sorted(new(hand))
-    newlist1 = set(newlist)
+    newlist1 = newlist.copy()
+    print(newlist1)
     if len(newlist) - len(newlist1) == 2:
-        return True
+        if max(newlist):
+            return True
     return False
 
 def is_fullhouse(hand):
@@ -106,11 +108,13 @@ def is_fullhouse(hand):
 def is_highcard(hand):
     count = 0
     newlist = sorted(new(hand))
-    for i in range(len(newlist)):
+    len1 = len(newlist)
+    for i in range(len1+1):
         if newlist[i] < newlist[i+1]:
             count += 1
     if count == 5:
-        return True
+        if max(count):
+            return True
     return False
 
 def hand_rank(hand):
@@ -121,20 +125,22 @@ def hand_rank(hand):
         The first version should identify if the given hand is a straight
         or a flush or a straight flush.
     '''
+    if is_highcard(hand):
+        return 9
     if is_threeofakind(hand):
-        return 3
-    if is_onepair(hand):
-        return 1
-    if is_twopair(hand):
-        return 2
-    if is_fullhouse(hand):
-        return 7
-    if is_fourofakind(hand):
-        return 4
-    if is_straight(hand) and is_flush(hand):
-        return 8
-    if is_flush(hand):
         return 6
+    if is_onepair(hand):
+        return 8
+    if is_twopair(hand):
+        return 7
+    if is_fullhouse(hand):
+        return 3
+    if is_fourofakind(hand):
+        return 2
+    if is_straight(hand) and is_flush(hand):
+        return 1
+    if is_flush(hand):
+        return 4
     if is_straight(hand):
         return 5
     # By now you should have seen the way a card is represented.
