@@ -85,9 +85,10 @@ def is_onepair(hand):
 def is_twopair(hand):
     '''It have two pairs of same cards and one different'''
     newlist = sorted(new(hand))
-    newlist1 = set(newlist)
+    newlist1 = newlist.copy()
     if len(newlist) - len(newlist1) == 2:
-        return True
+        if len(newlist) > len(newlist1):
+            return True
     return False
 
 def is_fullhouse(hand):
@@ -101,6 +102,14 @@ def is_fullhouse(hand):
         count += 1
     if count == 1:
         return True
+    return False
+def is_highcard(hand):
+    newlist = sorted(new(hand))
+    len1 = len(newlist)
+    for i in range(len1+1):
+        if newlist[i] < newlist[i+1]:
+            if max(newlist):
+                return True
     return False
 
 def hand_rank(hand):
@@ -127,6 +136,8 @@ def hand_rank(hand):
         return 2
     if is_onepair(hand):
         return 1
+    if is_highcard(hand):
+        return 0
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
@@ -141,7 +152,6 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
-    return 0
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
