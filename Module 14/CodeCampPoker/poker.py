@@ -108,7 +108,7 @@ def is_highcard(hand):
     newlist = sorted(new(hand))
     len1 = len(newlist)
     if len1 == 5 and not is_flush(hand):
-        return max(newlist)/100
+        return max(newlist)/10
     return False
 
 
