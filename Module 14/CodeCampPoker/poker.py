@@ -104,10 +104,11 @@ def is_fullhouse(hand):
     return False
 
 def is_highcard(hand):
+    '''which have highest card in set of five cards'''
     newlist = sorted(new(hand))
     if max(newlist) == 14:
         return True
-    return False 
+    return False
 
 def hand_rank(hand):
     '''
