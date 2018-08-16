@@ -79,8 +79,10 @@ def is_onepair(hand):
     newlist = sorted(new(hand))
     newlist1 = set(newlist)
     if len(newlist) - len(newlist1) == 1:
-        return True
-    return False
+        for i in newlist1:
+            if newlist.count(i) == 2:
+                return i/10
+    return 100
 
 def is_twopair(hand):
     '''It have two pairs of same cards and one different'''
@@ -134,8 +136,8 @@ def hand_rank(hand):
         return 3
     if is_twopair(hand):
         return 2
-    if is_onepair(hand):
-        return 1
+    if is_onepair(hand) != 100:
+        return is_onepair(hand)
     return is_highcard(hand)
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
