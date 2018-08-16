@@ -104,11 +104,9 @@ def is_fullhouse(hand):
     return False
 def is_highcard(hand):
     newlist = sorted(new(hand))
-    len1 = len(newlist)
-    for i in range(len1+1):
-        if newlist[i] < newlist[i+1]:
-            if max(newlist):
-                return True
+    newlist1 = set(newlist)
+    if len(newlist) - len(newlist1) != 0:
+        return True
     return False
 
 def hand_rank(hand):
