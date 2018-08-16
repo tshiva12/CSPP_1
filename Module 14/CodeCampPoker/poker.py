@@ -103,6 +103,16 @@ def is_fullhouse(hand):
         return True
     return False
 
+def is_highcard(hand):
+    count = 0
+    newlist = sorted(new(hand))
+    for i in range(len(newlist)):
+        if newlist[i] < newlist[i+1]:
+            count += 1
+    if count == 5:
+        return True
+    return False
+
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
