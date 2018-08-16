@@ -77,10 +77,14 @@ def is_threeofakind(hand):
 def is_onepair(hand):
     '''Only onepair of cards are same in number'''
     newlist = sorted(new(hand))
-    newlist1 = set(newlist)
-    if len(newlist) - len(newlist1) == 1:
-        return True
+    for i in range(len(newlist)+1):
+        if newlist[i][1] != newlist[i+1][1]:
+            return True
     return False
+    #newlist1 = set(newlist)
+    #if len(newlist) - len(newlist1) == 1:
+    #    return True
+    #return False
 
 def is_twopair(hand):
     '''It have two pairs of same cards and one different'''
