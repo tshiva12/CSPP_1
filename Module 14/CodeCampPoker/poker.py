@@ -77,13 +77,10 @@ def is_threeofakind(hand):
 def is_onepair(hand):
     '''Only onepair of cards are same in number'''
     newlist = sorted(new(hand))
-    if len(newlist) == 3:
+    newlist1 = set(newlist)
+    if len(newlist) - len(newlist1) == 1:
         return True
     return False
-    # newlist1 = set(newlist)
-    # if len(newlist) - len(newlist1) == 1:
-    #     return True
-    # return False
 
 def is_twopair(hand):
     '''It have two pairs of same cards and one different'''
@@ -109,8 +106,9 @@ def is_fullhouse(hand):
 def is_highcard(hand):
     '''which have highest card in set of five cards'''
     newlist = sorted(new(hand))
-    if len(newlist) == 5 and not is_flush(hand):
-        return max(newlist)/100
+    len1 = len(newlist)
+    if len1 == 5 and not is_flush(hand):
+        return max(newlist)
     return False
 
 
