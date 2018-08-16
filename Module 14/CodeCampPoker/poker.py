@@ -86,7 +86,6 @@ def is_twopair(hand):
     '''It have two pairs of same cards and one different'''
     newlist = sorted(new(hand))
     newlist1 = newlist.copy()
-    print(newlist1)
     if len(newlist) - len(newlist1) == 2:
         if max(newlist):
             return True
