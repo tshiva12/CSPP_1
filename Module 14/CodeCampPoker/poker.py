@@ -105,7 +105,6 @@ def is_fullhouse(hand):
 
 def is_highcard(hand):
     newlist = sorted(new(hand))
-    newlist1 = set(newlist)
     if max(newlist) == 14:
         return True
     return False 
