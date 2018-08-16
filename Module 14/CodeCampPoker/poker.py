@@ -85,7 +85,7 @@ def is_onepair(hand):
 def is_twopair(hand):
     '''It have two pairs of same cards and one different'''
     newlist = sorted(new(hand))
-    newlist1 = newlist.copy()
+    newlist1 = set(newlist)
     if len(newlist) - len(newlist1) == 2:
         return True
     return False
@@ -103,14 +103,13 @@ def is_fullhouse(hand):
         return True
     return False
 def is_highcard(hand):
-    '''take high rank from set of 5 cards'''
     newlist = sorted(new(hand))
     len1 = len(newlist)
     for i in range(len1+1):
         if newlist[i] < newlist[i+1]:
             if max(newlist):
                 return True
-        return False
+    return False
 
 def hand_rank(hand):
     '''
