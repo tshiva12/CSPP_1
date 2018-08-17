@@ -31,12 +31,12 @@ def similarity(dict1, dict2):
     dict5 = []
     for word in counter1:
         if word in counter2:
-            dict3.append(counter1[word]*counter2[word])
+            numer = dict3.append(counter1[word]*counter2[word])
     for word in counter1:
-        dict4.append(counter1[word]**2)
+        denom1 = dict4.append(counter1[word]**2)
     for word in counter2:
-        dict5.append(counter2[word]**2)
-    return sum(dict3)/(math.sqrt(sum(dict4)) * math.sqrt(sum(dict5)))
+        denom2 = dict5.append(counter2[word]**2)
+    return sum(numer)/(math.sqrt(sum(denom1)) * math.sqrt(sum(denom2)))
 
 
 
