@@ -30,7 +30,7 @@ def similarity(dict1, dict2):
     counter2 = collections.Counter(dict2)
     # print(counter1.most_common())
     # print(counter2.most_common())
-    # numer = []
+    numer = []
     denom1 = []
     denom2 = []
     for word in counter1:
