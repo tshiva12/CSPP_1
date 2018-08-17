@@ -36,9 +36,9 @@ def similarity(dict1, dict2):
         denom1.append(counter1[word]**2)
     for word in counter2:
         denom2.append(counter2[word]**2)
-    Numerator = sum(numer)
-    Denominator = math.sqrt(sum(denom1)) * math.sqrt(sum(denom2))
-    return Numerator/Denominator
+    numerator = sum(numer)
+    denominator = math.sqrt(sum(denom1)) * math.sqrt(sum(denom2))
+    return numerator/denominator
 
 
 
