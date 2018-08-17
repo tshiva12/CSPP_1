@@ -10,13 +10,9 @@ def similarity(dict1, dict2):
     import math
     char = string.ascii_letters + ' '
     dict1 = "".join(ele for ele in dict1 if ele in char)
-    print(dict1)
     dict2 = "".join(ele for ele in dict2 if ele in char)
-    print(dict2)
     dict1 = dict1.lower().strip().split()
-    print(dict1)
     dict2 = dict2.lower().strip().split()
-    print(dict2)
     stopword = load_stopwords("stopwords.txt")
     for word in list(dict1):
         if word in stopword:
