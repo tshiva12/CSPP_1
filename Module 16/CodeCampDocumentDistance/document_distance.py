@@ -17,11 +17,9 @@ def similarity(dict1, dict2):
     for word in list(dict1):
         if word in stopword:
             dict1.remove(word)
-    print(dict1)
     for word in list(dict2):
         if word in stopword:
             dict2.remove(word)
-    print(dict2)
     counter1 = {}
     counter2 = {}
     counter1 = collections.Counter(dict1)
