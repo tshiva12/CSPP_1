@@ -84,10 +84,10 @@ def main():
     # multiply matrix 1 and matrix 2
     num1 = input().split(',')
     matrix1 = read_matrix(num1)
-    print(matrix1)
+    # print(matrix1)
     num2 = input().split(',')
     matrix2 = read_matrix(num2)
-    print(matrix2)
+    # print(matrix2)
     if matrix1 == None or matrix2 == None:
         return None
     print(add_matrix(matrix1, matrix2))
