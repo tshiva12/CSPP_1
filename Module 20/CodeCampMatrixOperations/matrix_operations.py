@@ -21,15 +21,15 @@ def mult_matrix(matrix1, matrix2):
             list2.append(result)
         list1.append(list2)
     return list1
-    print("matrix m1 is :")
-    for r in matrix1:
-      print(r)
-    print("matrix m2 is :")
-    for r in matrix2:
-      print(r)
-    print("matrix multiply is :")
-    for r in result:
-      print(r)
+    # print("matrix m1 is :")
+    # for r in matrix1:
+    #   print(r)
+    # print("matrix m2 is :")
+    # for r in matrix2:
+    #   print(r)
+    # print("matrix multiply is :")
+    # for r in result:
+    #   print(r)
 
 def add_matrix(matrix1, matrix2):
     '''
