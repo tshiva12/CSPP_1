@@ -11,23 +11,25 @@ def mult_matrix(matrix1, matrix2):
     if len(matrix1) != len(matrix2[0]):
         print("Error: Matrix shapes invalid for mult")
         return None
-    result = copy.deepcopy(matrix1)
+    list1 = []
     for i in range(0, len(matrix1), 1):
+        list2 = []
         for j in range(0, len(matrix2[0]), 1):
-            result[i][j] = 0
+            result = 0
             for k in range(0, len(matrix2), 1):
-                result[i][j] = int(result[i][j])
-                result[i][j] += int(matrix1[i][k]) * int(matrix2[k][j])
-    return result
-    # print("matrix m1 is :")
-    # for r in m1:
-    #   print(r)
-    # print("matrix m2 is :")
-    # for r in m2:
-    #   print(r)
-    # print("matrix multiply is :")
-    # for r in result:
-    #   print(r)
+                result += int(matrix1[i][k]) * int(matrix2[k][j])
+            list2.append(result)
+        list1.append(list2)
+    return list1
+    print("matrix m1 is :")
+    for r in matrix1:
+      print(r)
+    print("matrix m2 is :")
+    for r in matrix2:
+      print(r)
+    print("matrix multiply is :")
+    for r in result:
+      print(r)
 
 def add_matrix(matrix1, matrix2):
     '''

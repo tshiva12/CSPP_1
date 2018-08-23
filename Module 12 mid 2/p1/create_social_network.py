@@ -42,8 +42,9 @@ def create_social_network(data):
             if key in dict_1:
                 dict_1[key].append(val)
             else:
-                dict_1[key] += [val]
-        print(dict_1)
+                dict_1[key] = val.split(',')
+        return dict_1
+    return {}
 def main():
     '''
         handling testcase input and printing output
