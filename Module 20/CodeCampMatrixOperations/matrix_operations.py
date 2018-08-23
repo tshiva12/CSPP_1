@@ -66,7 +66,7 @@ def read_matrix(size):
         matrix.append(row)
         total += len(row)
     if total != rows * columns:
-        print("error")
+        print("Error: Invalid input for the matrix")
     else:
         return matrix
 

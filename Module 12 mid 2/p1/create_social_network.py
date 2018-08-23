@@ -42,7 +42,7 @@ def create_social_network(data):
             if key in dict_1:
                 dict_1[key].append(val)
             else:
-                dict_1[key] = [val]
+                dict_1[key] += [val]
         print(dict_1)
 def main():
     '''
