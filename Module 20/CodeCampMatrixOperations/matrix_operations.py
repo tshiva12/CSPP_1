@@ -9,7 +9,7 @@ def mult_matrix(matrix1, matrix2):
         error message should be "Error: Matrix shapes invalid for mult"
     '''
     if len(matrix1) != len(matrix2[0]):
-        print("Error: Invalid input for the matrix")
+        print("Error: Matrix shapes invalid for mult")
         return none
     result = copy.deepcopy(matrix1)
     for i in range(0, len(matrix1), 1):
