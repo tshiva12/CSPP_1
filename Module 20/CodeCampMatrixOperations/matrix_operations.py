@@ -78,10 +78,8 @@ def main():
     # multiply matrix 1 and matrix 2
     num1 = input().split(',')
     m1 = read_matrix(num1)
-    print(m1)
     num2 = input().split(',')
     m2 = read_matrix(num2)
-    print(m2)
     print(add_matrix(m1,m2))
     print(mult_matrix(m1,m2))
 
