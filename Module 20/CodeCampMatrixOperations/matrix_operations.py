@@ -40,7 +40,8 @@ def add_matrix(matrix1, matrix2):
     len1 = len(matrix1)
     len2 = len(matrix2)
     if len1 != len2:
-        return "Error"
+        print("Error: Matrix shapes invalid for addition")
+        return None
     else:
         result = copy.deepcopy(matrix1)
         for i in range(0, len2, 1):
