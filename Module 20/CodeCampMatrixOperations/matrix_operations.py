@@ -86,8 +86,6 @@ def main():
     matrix2 = read_matrix(num2)
     if matrix1 == None or matrix2 == None:
         return None
-    else:
-        return Something is wrong with the testcase.
     print(add_matrix(matrix1, matrix2))
     print(mult_matrix(matrix1, matrix2))
 
