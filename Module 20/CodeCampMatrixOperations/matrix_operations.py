@@ -7,6 +7,9 @@ def mult_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
+    if len(m1) != len(m2[0]):
+    	print("Error: Invalid input for the matrix")
+    	return none
     result = copy.deepcopy(m1)
     for i in range(0,len(m1),1):
     	for j in range(0,len(m2[0]),1):
