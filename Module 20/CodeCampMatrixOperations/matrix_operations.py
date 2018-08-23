@@ -8,20 +8,19 @@ def mult_matrix(matrix1, matrix2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
-    if len(matrix1) == len(matrix2[0]):
-        list1 = []
-        for i in range(0, len(matrix1), 1):
-            list2 = []
-            for j in range(0, len(matrix2[0]), 1):
-                result = 0
-                for k in range(0, len(matrix2), 1):
-                    result += int(matrix1[i][k]) * int(matrix2[k][j])
-                list2.append(result)
-            list1.append(list2)
-        return list1
-    else:
+    if len(matrix1) != len(matrix2[0]):
         print("Error: Matrix shapes invalid for mult")
         return None
+    list1 = []
+    for i in range(0, len(matrix1), 1):
+        list2 = []
+        for j in range(0, len(matrix2[0]), 1):
+            result = 0
+            for k in range(0, len(matrix2), 1):
+                result += int(matrix1[i][k]) * int(matrix2[k][j])
+            list2.append(result)
+        list1.append(list2)
+    return list1
     # print("matrix m1 is :")
     # for r in matrix1:
     #   print(r)
