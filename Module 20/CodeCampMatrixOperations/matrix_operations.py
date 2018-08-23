@@ -44,13 +44,14 @@ def add_matrix(matrix1, matrix2):
     if len1 != len2:
         print("Error: Matrix shapes invalid for addition")
         return None
-    else:
-        result = copy.deepcopy(matrix1)
-        for i in range(0, len2, 1):
-            for j in range(0, len(matrix2[i]), 1):
-                result[i][j] = int(result[i][j])
-                result[i][j] += int(matrix2[i][j])
-        return result
+
+    result = copy.deepcopy(matrix1)
+    for i in range(0, len2, 1):
+        for j in range(0, len(matrix2[i]), 1):
+            result[i][j] = int(result[i][j])
+            result[i][j] += int(matrix2[i][j])
+    return result
+
 def read_matrix(size):
     '''
         read the matrix dimensions from input
@@ -69,10 +70,7 @@ def read_matrix(size):
         total += len(row)
     if total != rows * columns:
         print("Error: Invalid input for the matrix")
-    else:
-        return matrix
-
-
+    return matrix
 def main():
     '''main function of matrix operations'''
     # read matrix 1
@@ -88,7 +86,7 @@ def main():
     num2 = input().split(',')
     matrix2 = read_matrix(num2)
     # print(matrix2)
-    if matrix1 == None or matrix2 == None:
+    if matrix1 is None or matrix2 is None:
         return None
     print(add_matrix(matrix1, matrix2))
     print(mult_matrix(matrix1, matrix2))
