@@ -10,7 +10,7 @@ def mult_matrix(matrix1, matrix2):
     '''
     if len(matrix1) != len(matrix2[0]):
         print("Error: Matrix shapes invalid for mult")
-        return none
+        return None
     result = copy.deepcopy(matrix1)
     for i in range(0, len(matrix1), 1):
         for j in range(0, len(matrix2[0]), 1):
