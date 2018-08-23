@@ -80,9 +80,9 @@ def main():
     # add matrix 1 and matrix 2
 
     # multiply matrix 1 and matrix 2
-    num1 = int(input()).split(',')
+    num1 = input().split(',')
     matrix1 = read_matrix(num1)
-    num2 = int(input()).split(',')
+    num2 = input().split(',')
     matrix2 = read_matrix(num2)
     if matrix1 == None or matrix2 == None:
         return None
