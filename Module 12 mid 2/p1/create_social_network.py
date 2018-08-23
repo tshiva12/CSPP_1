@@ -36,7 +36,7 @@ def create_social_network(data):
     dict_1 = {}
     if 'follows' in data:
         data = data.splitlines()
-        print(data)
+        # print(data)
         for element in data:
             key, val = element.split(" follows ")
             if key in dict_1:
