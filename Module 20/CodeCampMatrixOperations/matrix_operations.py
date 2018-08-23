@@ -71,6 +71,8 @@ def read_matrix(size):
         total += len(row)
     if total != rows * columns:
         print("Error: Invalid input for the matrix")
+    else:
+        return matrix
 def main():
     '''main function of matrix operations'''
     # read matrix 1
