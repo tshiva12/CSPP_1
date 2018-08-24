@@ -43,18 +43,18 @@ def playgame(game):
 
 def validcheck(game):
     '''Validating the players'''
-    x_element = 'x'
-    o_element = 'o'
+    x_index = 'x'
+    o_index = 'o'
     countofx = 0
     countofo = 0
     countofdot = 0
     for index in game:
         if len(index) != 3:
             return "invalid game"
-        if x_element in index:
-            countofx += index.count(x_element)
-        if o_element in index:
-            countofo += index.count(o_element)
+        if x_index in index:
+            countofx += index.count(x_index)
+        if o_index in index:
+            countofo += index.count(o_index)
         if '.' in index:
             countofdot += index.count('.')
     if countofx + countofo + countofdot != 9:
