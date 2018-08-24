@@ -6,58 +6,58 @@ def check(seti):
     return 'o'
 def playgame(game):
     '''gamerules'''
-    set1 = set()
-    set2 = set()
-    set3 = set()
-    set4 = set()
-    set5 = set()
+    cond1 = set()
+    cond2 = set()
+    cond3 = set()
+    cond4 = set()
+    cond5 = set()
     len1 = len(game)
     for i in range(len1):
         for j in range(len(game[i])):
             if i == j:
-                set1.add(game[i][j])
+                cond1.add(game[i][j])
             if i + j == (len1 - 1):
-                set2.add(game[i][j])
-            sett = set(game[i])
-            if len(sett) == 1:
-                if 'x' in sett:
+                cond2.add(game[i][j])
+            cond = set(game[i])
+            if len(cond) == 1:
+                if 'x' in cond:
                     return 'x'
                 return 'o'
             if j == 0:
-                set3.add(game[i][j])
+                cond3.add(game[i][j])
             if j == 1:
-                set4.add(game[i][j])
+                cond4.add(game[i][j])
             if j == 2:
-                set5.add(game[i][j])
-    if len(set1) == 1:
-        return check(set1)
-    if len(set2) == 1:
-        return check(set2)
-    if len(set3) == 1:
-        return check(set3)
-    if len(set4) == 1:
-        return check(set4)
-    if len(set5) == 1:
-        return check(set5)
-    return "draw"
+                cond5.add(game[i][j])
+    if len(cond1) == 1:
+        return check(cond1)
+    if len(cond2) == 1:
+        return check(cond2)
+    if len(cond3) == 1:
+        return check(cond3)
+    if len(cond4) == 1:
+        return check(cond4)
+    if len(cond5) == 1:
+        return check(cond5)
+    return "Match drawn"
 
 def validcheck(game):
     '''Validating the players'''
-    x_index = 'x'
-    o_index = 'o'
-    countofx = 0
-    countofo = 0
-    countofdot = 0
+    x = 'x'
+    o = 'o'
+    cntofx = 0
+    cntofo = 0
+    cntofdot = 0
     for index in game:
+        if x in index:
+            cntofx += index.count(x)
+        if o in index:
+            cntofo += index.count(o)
+        if '.' in index:
+            cntofdot += index.count('.')
         if len(index) != 3:
             return "invalid game"
-        if x_index in index:
-            countofx += index.count(x_index)
-        if o_index in index:
-            countofo += index.count(o_index)
-        if '.' in index:
-            countofdot += index.count('.')
-    if countofx + countofo + countofdot != 9:
+    if cntofx + cntofo + cntofdot != 9:
         return "invalid input"
     if abs(countofx - countofo) != 1:
         return "invalid game"
