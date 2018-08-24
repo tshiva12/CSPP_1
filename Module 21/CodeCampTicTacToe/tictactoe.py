@@ -59,7 +59,7 @@ def validcheck(game):
             return "invalid game"
     if cntofx + cntofo + cntofdot != 9:
         return "invalid input"
-    if abs(countofx - countofo) != 1:
+    if abs(cntofx - cntofo) != 1:
         return "invalid game"
     return playgame(game)
 
