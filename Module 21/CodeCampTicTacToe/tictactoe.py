@@ -39,7 +39,7 @@ def playgame(game):
         return check(cond4)
     if len(cond5) == 1:
         return check(cond5)
-    return "Match drawn"
+    return "draw"
 
 def validcheck(game):
     '''Validating the players'''
