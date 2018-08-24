@@ -45,7 +45,7 @@ def search(search_index, query):
         if word in search_index:
             #print(qery)
             for index in range(len(search_index[word])):
-                res.append(search_index[word][index][0])
+                total.append(search_index[word][index][0])
 
 
     total = set(total)
