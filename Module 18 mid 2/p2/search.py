@@ -38,19 +38,19 @@ def search(search_index, query):
         make a set of doc_id and return
     '''
     # global res
-    res = []
+    total = []
     query = query.split()
     #print(query)
-    for qery in query:
-        if qery in search_index:
+    for word in query:
+        if word in search_index:
             #print(qery)
-            for index in range(len(search_index[qery])):
-                res.append(search_index[qery][index][0])
+            for index in range(len(search_index[word])):
+                res.append(search_index[word][index][0])
 
 
-    res = set(res)
-    print(res)
-    return res
+    total = set(total)
+    print(total)
+    return total
 
 def process_queries(search_index, queries):
     '''
