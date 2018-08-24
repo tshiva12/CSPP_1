@@ -20,16 +20,23 @@
         .
     }
 '''
-import string
+import re
 # helper function to load the stop words from a file
+def delete_stopwords(docs):
+    '''Function for deleting stop words'''
+    stopword = load_stopwords('stopwords.txt')
+    for word in stopword:
+        if word in docs:
+            del docs[word]
+    return docs
 def load_stopwords(filename):
     '''
         loads stop words from a file and returns a dictionary
     '''
-    stopwords = {}
+    stopwords = []
     with open(filename, 'r') as f_stopwords:
         for line in f_stopwords:
-            stopwords[line.strip()] = 0
+            stopwords.append(line.strip())
     return stopwords
 
 
@@ -39,13 +46,12 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    # text = text.lower()
-    # text = re.sub('[^a-z\ ]', '',text).lower().strip().split(" ")
-    # text = text.lower().strip().split(" ")
-    char = string.ascii_letters + ' '
-    text = "".join(ele for ele in text if ele in char)
-    text = text.lower().strip().split()
+    text = text.lower()
+    # return text
+    text = re.sub('[^a-z ]', '', text)
+    text = text.split()
     return text
+
 
 def build_search_index(docs):
     '''
@@ -63,23 +69,20 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    return word_list(docs)
-    cnt = 0
-    i = 0
-    list1 = []
-    res = {}
-    stopword = load_stopwords("stopwords.txt")
-    for word in word_list:
-        if word not in stopword and len(word) > 0:
-            list1.append(word)
-    for word in enumerate(list1):
-        for char in list1:
-            if word == char:
-                cnt += 1
-        res[word] = [i, cnt]
-    i += 1
-    return res
+    dict1 = {}
+    len1 = len(docs)
+    for index in range(len1):
+        doc = word_list(docs[index])
+        for j in doc:
+            word_count = doc.count(j)
+            if j in dict1:
+                if (index, word_count) not in dict1[j]:
+                    dict1[j].append((index, word_count))
+            else:
+                dict1[j] = [(index, word_count)]
+        dict1 = delete_stopwords(dict1)
 
+    return dict1
 # helper function to print the search index
 # use this to verify how the search index looks
 def print_search_index(index):
@@ -103,7 +106,7 @@ def main():
     for i in range(lines):
         documents.append(input())
         i += 1
-
+    #print(documents)
     # call print to display the search index
     print_search_index(build_search_index(documents))
 

@@ -37,12 +37,20 @@ def search(search_index, query):
         collect all the values for the words that are in the search_index
         make a set of doc_id and return
     '''
-    query = query.lower()
-    stopword = load_stopwords("stopwords.txt")
-    for word in query:
-        if word in stopword:
-            query.remove(word)
-    return query
+    # global res
+    res = []
+    query = query.split()
+    #print(query)
+    for qery in query:
+        if qery in search_index:
+            #print(qery)
+            for index in range(len(search_index[qery])):
+                res.append(search_index[qery][index][0])
+
+
+    res = set(res)
+    print(res)
+    return res
 
 def process_queries(search_index, queries):
     '''
@@ -50,18 +58,8 @@ def process_queries(search_index, queries):
         iterate through all the queries and call the search function
         print the results returned by search function
     '''
-    keys = search_index.keys()
-    list1 = queries.split()
-    list2 = []
-    for ele in queries:
-        list2.append(ele.split())
-    dict1 = {}
-    for word in list1:
-        if word in keys:
-            dict1.append(dict1[word][0])
-    return dict1
-
-    
+    for query in queries:
+        _ = search(search_index, query)
 
 def main():
     '''
@@ -72,7 +70,6 @@ def main():
 
     # read the number of search queries
     lines = int(input())
-    
     # read the search queries into a list
     queries = []
     for i in range(lines):
