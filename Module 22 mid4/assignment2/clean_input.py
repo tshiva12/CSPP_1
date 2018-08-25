@@ -8,7 +8,7 @@ def clean_string(string):
     i = 0
     res = ""
     while i < len1:
-        if string[i] not in ['!', '@', '#', '$', '%', '^', '&', '*']:
+        if string[i] not in ['!', '@', '#', '$', '%', '^', '&', '*', '.']:
             res += string[i]
         i = i+1
     return res.replace(" ", "")
