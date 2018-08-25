@@ -15,8 +15,12 @@ def check_sudoku(sudoku):
     '''
     for i_index in sudoku:
         for j_index in i_index:
-            if j_index not in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
-                return False
+            if j_index in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
+                return True
+            return False
+            if sum(j_index) == 45:
+                return True
+            return False
             if len(sudoku) != 9:
                 return False
             if sum(len(row) == 9 for row in sudoku) != 9:
