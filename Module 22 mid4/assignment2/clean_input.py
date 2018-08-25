@@ -9,7 +9,7 @@ def clean_string(string):
     res = ""
     while i < len1:
         if string[i] in ['!', '@', '#', '$', '%', '^', '&', '*', '.']:
-            res += ""
+            res += " "
         else:
             res += string[i]
         i = i+1
