@@ -8,7 +8,6 @@ def main():
     num = int(input())
     for _ in range(num):
         string += str(input()) + "\n"
-        # i += 1
     print(string)
 
 if __name__ == '__main__':
