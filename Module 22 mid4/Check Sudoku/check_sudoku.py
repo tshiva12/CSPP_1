@@ -13,9 +13,9 @@ def check_sudoku(sudoku):
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise
     '''
-    for i in sudoku:
-        for j in i:
-            if j not in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
+    for i_index in sudoku:
+        for j_index in i_index:
+            if j_index not in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
                 return False
 
 def main():
@@ -23,7 +23,6 @@ def main():
         main function to read input sudoku from console
         call check_sudoku function and print the result to console
     '''
-    
     # initialize empty list
     sudoku = []
 
