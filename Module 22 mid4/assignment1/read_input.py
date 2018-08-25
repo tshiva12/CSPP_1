@@ -6,7 +6,7 @@ def main():
     # Main function of string
     string = ""
     num = int(input())
-    for i in range(num):
+    for _ in range(num):
         string += str(input()) + "\n"
         # i += 1
     print(string)
