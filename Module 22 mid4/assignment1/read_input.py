@@ -3,6 +3,7 @@ Write a python program to read multiple lines of text input and store the input 
 '''
 def result(string):
     '''result of string after updating into one string'''
+    print("\n")
     return string
 def main():
     '''How to take input for the given assignment'''

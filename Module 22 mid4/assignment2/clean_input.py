@@ -1,12 +1,20 @@
 '''
-Write a function to clean up a given string by removing the special characters and retain 
+Write a function to clean up a given string by removing the special characters and retain
 alphabets in both upper and lower case and numbers.
 '''
-
 def clean_string(string):
-    pass
+    '''remove the special characters and spaces'''
+    len1 = len(string)
+    i = 0
+    res = ""
+    while i < len1:
+        if string[i] not in ['!', '@', '#', '$', '%', '^', '&', '*']:
+            res += string[i]
+        i = i+1
+    return res.replace(" ", "")
 
 def main():
+    '''Main function'''
     string = input()
     print(clean_string(string))
 
