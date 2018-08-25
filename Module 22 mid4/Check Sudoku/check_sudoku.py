@@ -18,6 +18,14 @@ def check_sudoku(sudoku):
             if j_index in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
                 return True
             return False
+    row = []
+    cols = []
+    if sum(len(row) == 9 for row in sudoku) != 9:
+        return False
+    return True
+    if sum(len(cols) == 9 for cols in sudoku) != 9:
+        return False
+    return True
 
 def main():
     '''

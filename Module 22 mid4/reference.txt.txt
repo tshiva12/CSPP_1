@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/4435169/how-do-i-append-one-string-to-another-in-python
+https://stackoverflow.com/questions/8270092/remove-all-whitespace-in-a-string-in-python
+https://stackoverflow.com/questions/289537/a-cool-algorithm-to-check-a-sudoku-field
+https://stackoverflow.com/questions/17605898/sudoku-checker-in-python
+https://www.conceptispuzzles.com/index.aspx?uri=puzzle/sudoku/rules
