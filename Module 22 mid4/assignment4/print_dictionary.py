@@ -7,8 +7,9 @@ the key and frequency with a SPACE - SPACE.
 def print_dictionary(dictionary):
     '''print dictionary'''
     list1 = list(dictionary.keys())
+    len1 = len(list1)
     list1.sort()
-    for i in range(len(list1)):
+    for i in range(len1):
         print(list1[i], "-", dictionary[list1[i]], end=('\n'))
 
 def main():
