@@ -13,7 +13,7 @@ def tokenize(string):
             dictionary[word] += 1
         else:
             dictionary[word] = 1
-    return dictionary           
+    return dictionary
 def main():
     '''Main function'''
     num = int(input())
