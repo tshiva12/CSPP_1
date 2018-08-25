@@ -3,12 +3,14 @@ Write a function to clean up a given string by removing the special characters a
 alphabets in both upper and lower case and numbers.
 '''
 def clean_string(string):
-    '''remove the special characters and spaces'''
+    '''remove special characters and spaces'''
     len1 = len(string)
     i = 0
     res = ""
     while i < len1:
-        if string[i] not in ['!', '@', '#', '$', '%', '^', '&', '*', '.']:
+        if string[i] in ['!', '@', '#', '$', '%', '^', '&', '*']:
+            res += ""
+        else:
             res += string[i]
         i = i+1
     return res.replace(" ", "")
