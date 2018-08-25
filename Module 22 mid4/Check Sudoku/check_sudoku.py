@@ -41,7 +41,6 @@ def main():
         sudoku.append(row)
     # call solution function and print result to console
     print(check_sudoku(sudoku))
-    print(True)
 
 if __name__ == '__main__':
     main()
