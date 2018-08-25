@@ -13,16 +13,13 @@ def tokenize(string):
             dictionary[word] += 1
         else:
             dictionary[word] = 1
-    return dictionary
-            
+    return dictionary           
 def main():
     '''Main function'''
     num = int(input())
-    for i in range(num):
+    for _ in range(num):
         string = input()
     tokenize(string)
     print(dictionary)
-    
-
 if __name__ == '__main__':
     main()
