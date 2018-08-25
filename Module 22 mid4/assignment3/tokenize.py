@@ -6,7 +6,6 @@ import re
 dict1 = {}
 def tokenize(string):
     '''Take the count of each word in a string'''
-    dict1 = {}
     list_1 = string.split(' ')
     for index in list_1:
         word = re.sub('[^a-zA-Z0-9]', '', index)
