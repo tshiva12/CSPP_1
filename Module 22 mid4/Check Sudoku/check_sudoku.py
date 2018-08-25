@@ -17,6 +17,7 @@ def check_sudoku(sudoku):
         for j_index in i_index:
             if j_index not in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
                 return False
+            return True
 
 def main():
     '''
@@ -25,9 +26,8 @@ def main():
     '''
     # initialize empty list
     sudoku = []
-
     # loop to read 9 lines of input from console
-    for i in range(9):
+    for _ in range(9):
         # read a line, split it on SPACE and append row to list
         row = input().split(' ')
         sudoku.append(row)
