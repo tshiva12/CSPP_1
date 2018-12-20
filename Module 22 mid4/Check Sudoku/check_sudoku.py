@@ -14,12 +14,12 @@ def check_sudoku(sudoku):
         The function has to return True for a valid sudoku grid and false otherwise
     '''
     row, column = 0, 0
-    for i in sudoku:
+    for i in range(len(sudoku)):
         if len(set(sudoku[i])) == 9:
             row += 1
-    for i in sudoku:
+    for i in range(len(sudoku)):
         columnlist = []
-        for j in sudoku:
+        for j in range(len(sudoku)):
             columnlist.append(sudoku[j][i])
         if len(set(columnlist)) == 9:
             column += 1
