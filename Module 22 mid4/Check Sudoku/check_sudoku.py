@@ -16,7 +16,7 @@ def check_sudoku(sudoku):
     row, column = 0, 0
     for i in range(len(sudoku)):
     	if(len(set(sudoku[i])) == 9):
-    		row += 9
+    		row += 1
     for i in range(len(sudoku)):
     	columnlist = []
     	for j in range(len(sudoku)):
