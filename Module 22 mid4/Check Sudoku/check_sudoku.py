@@ -13,19 +13,19 @@ def check_sudoku(sudoku):
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise
     '''
-    for i_index in sudoku:
-        for j_index in i_index:
-            if j_index in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
-                return True
-            return False
-    row = []
-    cols = []
-    if sum(len(row) == 9 for row in sudoku) != 9:
-        return False
-    return True
-    if sum(len(cols) == 9 for cols in sudoku) != 9:
-        return False
-    return True
+    row, column = 0, 0
+    for i in range(len(sudoku)):
+    	if(len(set(sudoku[i])) == 9):
+    		row += 9
+    for i in range(len(sudoku)):
+    	columnlist = []
+    	for j in range(len(sudoku)):
+    		columnlist.append(sudoku[j][i])
+    	if (len(set(columnlist)) == 9):
+    		column += 1
+    if (row == 9 & column == 9):
+        return True
+    return False
 
 def main():
     '''
