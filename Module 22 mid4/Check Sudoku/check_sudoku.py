@@ -19,7 +19,7 @@ def check_sudoku(sudoku):
             row += 1
     for i in sudoku:
         columnlist = []
-        for j in range(len(sudoku)):
+        for j in sudoku:
             columnlist.append(sudoku[j][i])
         if len(set(columnlist)) == 9:
             column += 1
