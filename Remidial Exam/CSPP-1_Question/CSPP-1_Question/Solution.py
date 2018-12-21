@@ -14,9 +14,11 @@ def Sudoku(sudoku):
 
 def main():
     sudoku = []
-    for i in range(1):
+    for i in range(9):
         row = input()
         sudoku.append(row)
+        for i in row:
+            return row
     Sudoku(sudoku)
 
 if __name__ == '__main__':
