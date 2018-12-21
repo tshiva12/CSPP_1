@@ -3,10 +3,7 @@ Expected Output:
 Given sudoku is solved
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -22,10 +19,16 @@ Expected Output:
 7
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -41,10 +44,16 @@ Expected Output:
 9
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -54,10 +63,16 @@ Expected Output:
 2
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -67,10 +82,16 @@ Expected Output:
 9
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -86,10 +107,16 @@ Expected Output:
 15
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 7, in create
+    list1.add(value[i][col])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -105,10 +132,16 @@ Expected Output:
 3
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -124,10 +157,16 @@ Expected Output:
 9
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -143,10 +182,16 @@ Expected Output:
 6
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 7, in create
+    list1.add(value[i][col])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -162,10 +207,16 @@ Expected Output:
 469
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 7, in create
+    list1.add(value[i][col])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -181,10 +232,16 @@ Expected Output:
 8
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -200,10 +257,16 @@ Expected Output:
 4
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -219,10 +282,16 @@ Expected Output:
 8
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -238,10 +307,16 @@ Expected Output:
 469
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -266,10 +341,16 @@ Expected Output:
 469
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -308,10 +389,16 @@ Expected Output:
 23689
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 7, in create
+    list1.add(value[i][col])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -319,10 +406,16 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 7, in create
+    list1.add(value[i][col])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -330,10 +423,12 @@ Expected Output:
 Invalid input
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 96, in main
+    if input1[k] != '.':
+IndexError: string index out of range
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -341,10 +436,16 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -415,10 +516,16 @@ Expected Output:
 235689
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -426,10 +533,12 @@ Expected Output:
 Invalid input
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 96, in main
+    if input1[k] != '.':
+IndexError: string index out of range
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -487,10 +596,16 @@ Expected Output:
 1346
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -555,10 +670,16 @@ Expected Output:
 4567
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -589,10 +710,16 @@ Expected Output:
 6
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 
 ########## Testcase 24: Failed ##########
@@ -636,9 +763,15 @@ Expected Output:
 19
 
 Your Output: 
-  File "sudoko.py", line 1
-    def create(mat, row, col):
-    ^
-IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "sudoko.py", line 104, in <module>
+    main()
+  File "sudoko.py", line 100, in main
+    possibilities(matrix)
+  File "sudoko.py", line 72, in possibilities
+    set1 = create(matrix, i, j)
+  File "sudoko.py", line 5, in create
+    list1.add(value[row][i])
+NameError: name 'value' is not defined
 ----------------------------------------
 

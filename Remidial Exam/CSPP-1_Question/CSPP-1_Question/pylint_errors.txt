@@ -1,2 +1,69 @@
 ************* Module sudoko
-sudoko.py:1:0: E0001: unexpected indent (<unknown>, line 1) (syntax-error)
+sudoko.py:2:9: C0326: Exactly one space required before assignment
+    list1= set()
+         ^ (bad-whitespace)
+sudoko.py:12:55: C0326: No space allowed before :
+    if row >= 0 and row <= 2 and col >= 0 and col <= 2 :
+                                                       ^ (bad-whitespace)
+sudoko.py:18:55: C0326: No space allowed before :
+    if row >= 0 and row <= 2 and col >= 3 and col <= 5 :
+                                                       ^ (bad-whitespace)
+sudoko.py:24:55: C0326: No space allowed before :
+    if row >= 0 and row <= 2 and col >= 6 and col <= 8 :
+                                                       ^ (bad-whitespace)
+sudoko.py:30:55: C0326: No space allowed before :
+    if row >= 3 and row <= 5 and col >= 0 and col <= 2 :
+                                                       ^ (bad-whitespace)
+sudoko.py:36:55: C0326: No space allowed before :
+    if row >= 3 and row <= 5 and col >= 6 and col <= 8 :
+                                                       ^ (bad-whitespace)
+sudoko.py:41:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:42:55: C0326: No space allowed before :
+    if row >= 3 and row <= 5 and col >= 3 and col <= 5 :
+                                                       ^ (bad-whitespace)
+sudoko.py:48:55: C0326: No space allowed before :
+    if row >= 6 and row <= 8 and col >= 3 and col <= 5 :
+                                                       ^ (bad-whitespace)
+sudoko.py:54:55: C0326: No space allowed before :
+    if row >= 6 and row <= 8 and col >= 0 and col <= 2 :
+                                                       ^ (bad-whitespace)
+sudoko.py:60:55: C0326: No space allowed before :
+    if row >= 6 and row <= 8 and col >= 6 and col <= 8 :
+                                                       ^ (bad-whitespace)
+sudoko.py:80:23: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:81:24: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:86:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:88:56: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:89:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:90:25: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:91:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:103:11: C0326: Exactly one space required around comparison
+if __name__=="__main__":
+           ^^ (bad-whitespace)
+sudoko.py:105:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:106:0: C0305: Trailing newlines (trailing-newlines)
+sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
+sudoko.py:1:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:5:22: E0602: Undefined variable 'value' (undefined-variable)
+sudoko.py:7:22: E0602: Undefined variable 'value' (undefined-variable)
+sudoko.py:10:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:12:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:15:29: E0602: Undefined variable 'grid' (undefined-variable)
+sudoko.py:18:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:24:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:30:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:36:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:42:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:48:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:54:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:60:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:10:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+sudoko.py:10:0: R0911: Too many return statements (9/6) (too-many-return-statements)
+sudoko.py:10:0: R0912: Too many branches (27/12) (too-many-branches)
+sudoko.py:66:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:74:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
+sudoko.py:85:0: C0111: Missing function docstring (missing-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 3.16/10 (previous run: 2.12/10, +1.04)
+

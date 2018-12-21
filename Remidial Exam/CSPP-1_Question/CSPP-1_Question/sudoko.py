@@ -1,4 +1,4 @@
- def create(mat, row, col):
+def create(mat, row, col):
     list1= set()
     for i in range(9):
         if mat[row][i] != '0':
