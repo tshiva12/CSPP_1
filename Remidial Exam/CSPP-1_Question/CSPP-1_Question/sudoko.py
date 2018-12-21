@@ -5,9 +5,11 @@ def create(mat, row, col):
             list1.add(mat[row][i])
         if mat[i][col] != '0':
             list1.add(mat[i][col])
+    for i in sub_matrix(mat, row, col):
+        list1.add(i)
     return list1
 
-def sub_grid(mat, row, col):
+def sub_matrix(mat, row, col):
     list2 = []
     if row >= 0 and row <= 2 and col >= 0 and col <= 2 :
         for i in range(0, 3):
