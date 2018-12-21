@@ -44,8 +44,6 @@ sudoko.py:105:0: C0303: Trailing whitespace (trailing-whitespace)
 sudoko.py:106:0: C0305: Trailing newlines (trailing-newlines)
 sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
 sudoko.py:1:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:5:22: E0602: Undefined variable 'value' (undefined-variable)
-sudoko.py:7:22: E0602: Undefined variable 'value' (undefined-variable)
 sudoko.py:10:0: C0111: Missing function docstring (missing-docstring)
 sudoko.py:12:7: R1716: Simplify chained comparison between the operands (chained-comparison)
 sudoko.py:15:29: E0602: Undefined variable 'grid' (undefined-variable)
@@ -65,5 +63,5 @@ sudoko.py:74:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is
 sudoko.py:85:0: C0111: Missing function docstring (missing-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 3.16/10 (previous run: 2.12/10, +1.04)
+Your code has been rated at 4.43/10 (previous run: 3.16/10, +1.27)
 

@@ -2,9 +2,9 @@ def create(mat, row, col):
     list1= set()
     for i in range(9):
         if mat[row][i] != '0':
-            list1.add(value[row][i])
+            list1.add(mat[row][i])
         if mat[i][col] != '0':
-            list1.add(value[i][col])
+            list1.add(mat[i][col])
     return list1
 
 def sub_grid(mat, row, col):
