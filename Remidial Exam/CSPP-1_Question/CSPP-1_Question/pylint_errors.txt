@@ -32,6 +32,6 @@ sudoko.py:21:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is
 sudoko.py:30:4: C0103: Constant name "grid" doesn't conform to UPPER_CASE naming style (invalid-name)
 sudoko.py:33:4: C0103: Constant name "given_input" doesn't conform to UPPER_CASE naming style (invalid-name)
 
------------------------------------
-Your code has been rated at 2.57/10
+------------------------------------------------------------------
+Your code has been rated at 2.12/10 (previous run: 2.57/10, -0.45)
 
