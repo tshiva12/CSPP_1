@@ -2,61 +2,61 @@
 sudoko.py:2:9: C0326: Exactly one space required before assignment
     list1= set()
          ^ (bad-whitespace)
-sudoko.py:14:55: C0326: No space allowed before :
+sudoko.py:15:55: C0326: No space allowed before :
     if row >= 0 and row <= 2 and col >= 0 and col <= 2 :
                                                        ^ (bad-whitespace)
-sudoko.py:20:55: C0326: No space allowed before :
+sudoko.py:21:55: C0326: No space allowed before :
     if row >= 0 and row <= 2 and col >= 3 and col <= 5 :
                                                        ^ (bad-whitespace)
-sudoko.py:26:55: C0326: No space allowed before :
+sudoko.py:27:55: C0326: No space allowed before :
     if row >= 0 and row <= 2 and col >= 6 and col <= 8 :
                                                        ^ (bad-whitespace)
-sudoko.py:32:55: C0326: No space allowed before :
+sudoko.py:33:55: C0326: No space allowed before :
     if row >= 3 and row <= 5 and col >= 0 and col <= 2 :
                                                        ^ (bad-whitespace)
-sudoko.py:37:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:38:55: C0326: No space allowed before :
+sudoko.py:38:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:39:55: C0326: No space allowed before :
     if row >= 3 and row <= 5 and col >= 3 and col <= 5 :
                                                        ^ (bad-whitespace)
-sudoko.py:44:55: C0326: No space allowed before :
+sudoko.py:45:55: C0326: No space allowed before :
     if row >= 3 and row <= 5 and col >= 6 and col <= 8 :
                                                        ^ (bad-whitespace)
-sudoko.py:50:55: C0326: No space allowed before :
+sudoko.py:51:55: C0326: No space allowed before :
     if row >= 6 and row <= 8 and col >= 0 and col <= 2 :
                                                        ^ (bad-whitespace)
-sudoko.py:56:55: C0326: No space allowed before :
+sudoko.py:57:55: C0326: No space allowed before :
     if row >= 6 and row <= 8 and col >= 3 and col <= 5 :
                                                        ^ (bad-whitespace)
-sudoko.py:62:55: C0326: No space allowed before :
+sudoko.py:63:55: C0326: No space allowed before :
     if row >= 6 and row <= 8 and col >= 6 and col <= 8 :
                                                        ^ (bad-whitespace)
-sudoko.py:83:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:84:56: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:85:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:97:11: C0326: Exactly one space required around comparison
+sudoko.py:84:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:85:56: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:86:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:98:11: C0326: Exactly one space required around comparison
 if __name__=="__main__":
            ^^ (bad-whitespace)
-sudoko.py:99:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:100:0: C0305: Trailing newlines (trailing-newlines)
+sudoko.py:100:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:101:0: C0305: Trailing newlines (trailing-newlines)
 sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
 sudoko.py:1:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:12:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:14:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:20:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:26:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:32:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:38:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:44:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:50:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:56:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:62:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:12:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-sudoko.py:12:0: R0911: Too many return statements (9/6) (too-many-return-statements)
-sudoko.py:12:0: R0912: Too many branches (27/12) (too-many-branches)
-sudoko.py:68:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:76:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
-sudoko.py:82:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:13:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:15:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:21:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:27:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:33:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:39:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:45:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:51:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:57:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:63:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:13:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+sudoko.py:13:0: R0911: Too many return statements (9/6) (too-many-return-statements)
+sudoko.py:13:0: R0912: Too many branches (27/12) (too-many-branches)
+sudoko.py:69:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:77:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
+sudoko.py:83:0: C0111: Missing function docstring (missing-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 5.68/10 (previous run: 5.19/10, +0.49)
+Your code has been rated at 5.73/10 (previous run: 5.68/10, +0.05)
 

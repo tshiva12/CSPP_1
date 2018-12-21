@@ -6,7 +6,8 @@ def create(mat, row, col):
         if mat[i][col] != '0':
             list1.add(mat[i][col])
     for i in sub_matrix(mat, row, col):
-        list1.add(i)
+        if i != '0':
+            list1.add(i)
     return list1
 
 def sub_matrix(mat, row, col):
