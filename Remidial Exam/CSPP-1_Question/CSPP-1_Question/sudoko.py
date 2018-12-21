@@ -14,7 +14,7 @@ def sub_matrix(mat, row, col):
     if row >= 0 and row <= 2 and col >= 0 and col <= 2 :
         for i in range(0, 3):
             for j in range(0, 3):
-                list2.append(grid[i][j])
+                list2.append(mat[i][j])
         return list2
 
     if row >= 0 and row <= 2 and col >= 3 and col <= 5 :
