@@ -1,41 +1,106 @@
-def print_grid(arr): 
-    for i in range(9): 
-        print(arr[i]) 
-def create_set(g, row, col):
-    lis= set()
+ def create(mat, row, col):
+    list1= set()
     for i in range(9):
-        if g[row][i] != '0':
-            lis.add(g[row][i])
-        if g[i][col] != '0':
-            lis.add(g[i][col])
-    return lis
+        if mat[row][i] != '0':
+            list1.add(value[row][i])
+        if mat[i][col] != '0':
+            list1.add(value[i][col])
+    return list1
 
-def possibilities(g):
+def sub_grid(mat, row, col):
+    list2 = []
+    if row >= 0 and row <= 2 and col >= 0 and col <= 2 :
+        for i in range(0, 3):
+            for j in range(0, 3):
+                list2.append(grid[i][j])
+        return list2
+
+    if row >= 0 and row <= 2 and col >= 3 and col <= 5 :
+        for i in range(0, 3):
+            for j in range(3, 5):
+                list2.append(mat[i][j])
+        return list2
+
+    if row >= 0 and row <= 2 and col >= 6 and col <= 8 :
+        for i in range(0, 3):
+            for j in range(6, 9):
+                list2.append(mat[i][j])
+        return list2
+
+    if row >= 3 and row <= 5 and col >= 0 and col <= 2 :
+        for i in range(3, 6):
+            for j in range(0, 3):
+                list2.append(mat[i][j])
+        return list2
+
+    if row >= 3 and row <= 5 and col >= 6 and col <= 8 :
+        for i in range(3, 6):
+            for j in range(6, 9):
+                list2.append(mat[i][j])
+        return list2
+    
+    if row >= 3 and row <= 5 and col >= 3 and col <= 5 :
+        for i in range(3, 6):
+            for j in range(3, 6):
+                list2.append(mat[i][j])
+        return list2
+
+    if row >= 6 and row <= 8 and col >= 3 and col <= 5 :
+        for i in range(6, 9):
+            for j in range(3, 6):
+                list2.append(mat[i][j])
+        return list2
+
+    if row >= 6 and row <= 8 and col >= 0 and col <= 2 :
+        for i in range(6, 9):
+            for j in range(0, 3):
+                list2.append(mat[i][j])
+        return list2
+
+    if row >= 6 and row <= 8 and col >= 6 and col <= 8 :
+        for i in range(6, 9):
+            for j in range(6, 9):
+                list2.append(mat[i][j])
+        return list2
+
+def possibilities(matrix):
     for i in range(9):
         for j in range(9):
-            res = ""
-            s = set()
-            if g[i][j] == '0':
-                s = create_set(g, i, j)
+            result = ""
+            set1 = set()
+            if matrix[i][j] == '0':
+                set1 = create(matrix, i, j)
                 # print(s)
-            if len(s) != 0:
+            if len(set1) != 0:
                 for each in "123456789":
-                    if each not in s:
-                        res += each
-                print(res)
+                    if each not in set1:
+                        result += each
+                print(result)
 
-if __name__=="__main__": 
-      
-    # creating a 2D array for the grid 
-    grid=[['0' for x in range(9)]for y in range(9)] 
-    # print_grid(grid)
-      
-    given_input = input()
+# def printmatrix(arr): 
+#     for i in range(9): 
+#         print(arr[i])
+
+
+def main():
+    
+    # creating a 2D array for the sudoko in matrix format
+    matrix = [['0' for x in range(9)] for y in range(9)] 
+    
+    # printmatrix(matrix)  
+    
+    input1 = input()
     k = 0
     for i in range(9):
         for j in range(9):
-            if given_input[k] != '.':
-                grid[i][j] = given_input[k]
+            if input1[k] != '.':
+                matrix[i][j] = input1[k]
             k += 1
-    # print_grid(grid)
-    possibilities(grid)
+    # printmatrix(matrix)
+    possibilities(matrix)
+
+
+if __name__=="__main__":
+    main()
+      
+
