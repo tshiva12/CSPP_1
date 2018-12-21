@@ -14,34 +14,30 @@ sudoko.py:26:55: C0326: No space allowed before :
 sudoko.py:32:55: C0326: No space allowed before :
     if row >= 3 and row <= 5 and col >= 0 and col <= 2 :
                                                        ^ (bad-whitespace)
+sudoko.py:37:0: C0303: Trailing whitespace (trailing-whitespace)
 sudoko.py:38:55: C0326: No space allowed before :
-    if row >= 3 and row <= 5 and col >= 6 and col <= 8 :
-                                                       ^ (bad-whitespace)
-sudoko.py:43:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:44:55: C0326: No space allowed before :
     if row >= 3 and row <= 5 and col >= 3 and col <= 5 :
                                                        ^ (bad-whitespace)
+sudoko.py:44:55: C0326: No space allowed before :
+    if row >= 3 and row <= 5 and col >= 6 and col <= 8 :
+                                                       ^ (bad-whitespace)
 sudoko.py:50:55: C0326: No space allowed before :
-    if row >= 6 and row <= 8 and col >= 3 and col <= 5 :
+    if row >= 6 and row <= 8 and col >= 0 and col <= 2 :
                                                        ^ (bad-whitespace)
 sudoko.py:56:55: C0326: No space allowed before :
-    if row >= 6 and row <= 8 and col >= 0 and col <= 2 :
+    if row >= 6 and row <= 8 and col >= 3 and col <= 5 :
                                                        ^ (bad-whitespace)
 sudoko.py:62:55: C0326: No space allowed before :
     if row >= 6 and row <= 8 and col >= 6 and col <= 8 :
                                                        ^ (bad-whitespace)
-sudoko.py:82:23: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:83:24: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:88:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:90:56: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:91:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:92:25: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:93:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:105:11: C0326: Exactly one space required around comparison
+sudoko.py:83:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:84:56: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:85:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:97:11: C0326: Exactly one space required around comparison
 if __name__=="__main__":
            ^^ (bad-whitespace)
-sudoko.py:107:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:108:0: C0305: Trailing newlines (trailing-newlines)
+sudoko.py:99:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:100:0: C0305: Trailing newlines (trailing-newlines)
 sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
 sudoko.py:1:0: C0111: Missing function docstring (missing-docstring)
 sudoko.py:12:0: C0111: Missing function docstring (missing-docstring)
@@ -59,8 +55,8 @@ sudoko.py:12:0: R0911: Too many return statements (9/6) (too-many-return-stateme
 sudoko.py:12:0: R0912: Too many branches (27/12) (too-many-branches)
 sudoko.py:68:0: C0111: Missing function docstring (missing-docstring)
 sudoko.py:76:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
-sudoko.py:87:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:82:0: C0111: Missing function docstring (missing-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 5.19/10 (previous run: 4.57/10, +0.62)
+Your code has been rated at 5.68/10 (previous run: 5.19/10, +0.49)
 

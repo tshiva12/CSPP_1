@@ -34,12 +34,6 @@ def sub_matrix(mat, row, col):
             for j in range(0, 3):
                 list2.append(mat[i][j])
         return list2
-
-    if row >= 3 and row <= 5 and col >= 6 and col <= 8 :
-        for i in range(3, 6):
-            for j in range(6, 9):
-                list2.append(mat[i][j])
-        return list2
     
     if row >= 3 and row <= 5 and col >= 3 and col <= 5 :
         for i in range(3, 6):
@@ -47,15 +41,21 @@ def sub_matrix(mat, row, col):
                 list2.append(mat[i][j])
         return list2
 
-    if row >= 6 and row <= 8 and col >= 3 and col <= 5 :
-        for i in range(6, 9):
-            for j in range(3, 6):
+    if row >= 3 and row <= 5 and col >= 6 and col <= 8 :
+        for i in range(3, 6):
+            for j in range(6, 9):
                 list2.append(mat[i][j])
         return list2
 
     if row >= 6 and row <= 8 and col >= 0 and col <= 2 :
         for i in range(6, 9):
             for j in range(0, 3):
+                list2.append(mat[i][j])
+        return list2
+
+    if row >= 6 and row <= 8 and col >= 3 and col <= 5 :
+        for i in range(6, 9):
+            for j in range(3, 6):
                 list2.append(mat[i][j])
         return list2
 
@@ -79,17 +79,9 @@ def possibilities(matrix):
                         result += each
                 print(result)
 
-# def printmatrix(arr): 
-#     for i in range(9): 
-#         print(arr[i])
-
-
 def main():
     
-    # creating a 2D array for the sudoko in matrix format
     matrix = [['0' for x in range(9)] for y in range(9)] 
-    
-    # printmatrix(matrix)  
     
     input1 = input()
     k = 0
@@ -98,7 +90,7 @@ def main():
             if input1[k] != '.':
                 matrix[i][j] = input1[k]
             k += 1
-    # printmatrix(matrix)
+
     possibilities(matrix)
 
 
