@@ -1,0 +1,14 @@
+************* Module Solution
+Solution.py:23:0: C0304: Final newline missing (missing-final-newline)
+Solution.py:1:0: C0103: Module name "Solution" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing module docstring (missing-docstring)
+Solution.py:1:0: C0103: Function name "Sudoku" doesn't conform to snake_case naming style (invalid-name)
+Solution.py:1:0: C0111: Missing function docstring (missing-docstring)
+Solution.py:3:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:8:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+Solution.py:15:0: C0111: Missing function docstring (missing-docstring)
+Solution.py:17:8: W0612: Unused variable 'i' (unused-variable)
+
+--------------------------------------------------------------------
+Your code has been rated at 5.71/10 (previous run: -6.67/10, +12.38)
+
