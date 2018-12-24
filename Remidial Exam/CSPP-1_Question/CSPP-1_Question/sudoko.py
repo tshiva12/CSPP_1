@@ -80,6 +80,7 @@ def possibilities(matrix):
                         result += each
                 print(result)
 
+
 def main():
     
     matrix = [['0' for x in range(9)] for y in range(9)] 
