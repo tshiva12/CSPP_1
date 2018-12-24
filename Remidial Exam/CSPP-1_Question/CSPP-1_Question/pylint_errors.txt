@@ -32,7 +32,6 @@ sudoko.py:63:55: C0326: No space allowed before :
                                                        ^ (bad-whitespace)
 sudoko.py:84:0: C0303: Trailing whitespace (trailing-whitespace)
 sudoko.py:85:56: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:86:0: C0303: Trailing whitespace (trailing-whitespace)
 sudoko.py:98:11: C0326: Exactly one space required around comparison
 if __name__=="__main__":
            ^^ (bad-whitespace)
@@ -58,5 +57,5 @@ sudoko.py:77:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is
 sudoko.py:83:0: C0111: Missing function docstring (missing-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 5.73/10 (previous run: 5.68/10, +0.05)
+Your code has been rated at 5.95/10 (previous run: 5.73/10, +0.22)
 

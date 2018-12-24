@@ -83,7 +83,7 @@ def possibilities(matrix):
 def main():
     
     matrix = [['0' for x in range(9)] for y in range(9)] 
-    
+    print(matrix)
     input1 = input()
     k = 0
     for i in range(9):
@@ -91,7 +91,7 @@ def main():
             if input1[k] != '.':
                 matrix[i][j] = input1[k]
             k += 1
-
+    print(matrix)
     possibilities(matrix)
 
 
