@@ -32,11 +32,18 @@ sudoko.py:63:55: C0326: No space allowed before :
                                                        ^ (bad-whitespace)
 sudoko.py:84:0: C0303: Trailing whitespace (trailing-whitespace)
 sudoko.py:85:56: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:98:11: C0326: Exactly one space required around comparison
+sudoko.py:89:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+sudoko.py:92:13: C0326: Exactly one space required around assignment
+        count=0
+             ^ (bad-whitespace)
+sudoko.py:104:29: C0326: Exactly one space required after comparison
+        if (count != 0 and k ==81):
+                             ^^ (bad-whitespace)
+sudoko.py:113:11: C0326: Exactly one space required around comparison
 if __name__=="__main__":
            ^^ (bad-whitespace)
-sudoko.py:100:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:101:0: C0305: Trailing newlines (trailing-newlines)
+sudoko.py:115:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:116:0: C0305: Trailing newlines (trailing-newlines)
 sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
 sudoko.py:1:0: C0111: Missing function docstring (missing-docstring)
 sudoko.py:13:0: C0111: Missing function docstring (missing-docstring)
@@ -57,5 +64,5 @@ sudoko.py:77:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is
 sudoko.py:83:0: C0111: Missing function docstring (missing-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 5.85/10 (previous run: 5.95/10, -0.10)
+Your code has been rated at 5.80/10 (previous run: 5.85/10, -0.06)
 

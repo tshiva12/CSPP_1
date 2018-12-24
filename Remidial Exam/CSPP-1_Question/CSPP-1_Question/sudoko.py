@@ -86,13 +86,28 @@ def main():
     # print(matrix)
     input1 = input()
     k = 0
-    for i in range(9):
-        for j in range(9):
-            if input1[k] != '.':
-                matrix[i][j] = input1[k]
-            k += 1
-    # print(matrix)
-    possibilities(matrix)
+    if (len(input1) < 81):
+        print("Invalid input")
+    else:
+        count=0
+        for i in range(9):
+            for j in range(9):
+                # print(k)
+                if input1[k] != '.':
+                    matrix[i][j] = input1[k]
+                else:
+                    count += 1
+                k += 1
+        # print(matrix)
+        # if (k < 81):
+        #     print("Invalid input")
+        if (count != 0 and k ==81):
+            # print("123")
+            possibilities(matrix)
+        else:
+            print("Given sudoku is solved")
+        # else:
+        #     print("Invalid input")
 
 
 if __name__=="__main__":
