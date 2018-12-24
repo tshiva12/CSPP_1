@@ -101,14 +101,13 @@ def main():
         # print(matrix)
         # if (k < 81):
         #     print("Invalid input")
-        if(matrix[0][0] == matrix[1][0]):
-            print("Invalid Sudoku:Duplicate values")
-        elif (count != 0 and k ==81):
+        if (count != 0 and k ==81):
             # print("123")
             possibilities(matrix)
         else:
             print("Given sudoku is solved")
-        
+        # else:
+        #     print("Invalid input")
 
 
 if __name__=="__main__":
