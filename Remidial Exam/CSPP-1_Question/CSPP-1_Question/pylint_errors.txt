@@ -57,5 +57,5 @@ sudoko.py:77:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is
 sudoko.py:83:0: C0111: Missing function docstring (missing-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 5.95/10 (previous run: 5.73/10, +0.22)
+Your code has been rated at 5.85/10 (previous run: 5.95/10, -0.10)
 
