@@ -11,11 +11,11 @@ In this method :
 def inputvalidation(sudoku1):
     if len(sudoku1) != 81:
         raise Exception("Invalid input")
-    if '.' not in sudoku1:
+    elif '.' not in sudoku1:
         raise Exception("Given sudoku is solved")
 
 def validateSudoku(sudoku):
-    for i in range(8):
+    for i in range(9):
         var = getRowValues(i, sudoku)
         var1 = getColumnValues(i, sudoku) 
         duplicates = set(var)
@@ -65,8 +65,7 @@ Read the input and store the values in an appropriate data sturcture.
 Then travese through each value, if you get a "." then collect the possible values
 """
 def main():
-    data = input()
-    sudoku = list(data)
+    sudoku = list(input())
     #print(sudoku)
     #grid = list(sudoku)
     #print(type(grid))
@@ -77,6 +76,7 @@ def main():
             for j in range(0,9):
                 lst2.append(sudoku[i])
                 i = i +1
+
             list1.append(lst2)
             exc = inputvalidation(sudoku)
         validateSudoku(list1)
