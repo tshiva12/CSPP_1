@@ -1,4 +1,7 @@
 ************* Module Data
+Data.py:18:20: C0326: Exactly one space required after comma
+    for i in range(0,8):
+                    ^ (bad-whitespace)
 Data.py:20:41: C0303: Trailing whitespace (trailing-whitespace)
 Data.py:26:0: W0311: Bad indentation. Found 11 spaces, expected 12 (bad-indentation)
 Data.py:74:24: C0326: Exactly one space required after comma
@@ -38,5 +41,5 @@ Data.py:76:16: W0612: Unused variable 'j' (unused-variable)
 Data.py:81:12: W0612: Unused variable 'exc' (unused-variable)
 
 ------------------------------------------------------------------
-Your code has been rated at 1.88/10 (previous run: 1.88/10, +0.00)
+Your code has been rated at 1.67/10 (previous run: 1.88/10, -0.21)
 
