@@ -65,7 +65,8 @@ Read the input and store the values in an appropriate data sturcture.
 Then travese through each value, if you get a "." then collect the possible values
 """
 def main():
-    sudoku = list(input())
+    data = input()
+    sudoku = list(data)
     #print(sudoku)
     #grid = list(sudoku)
     #print(type(grid))
@@ -76,7 +77,6 @@ def main():
             for j in range(0,9):
                 lst2.append(sudoku[i])
                 i = i +1
-
             list1.append(lst2)
             exc = inputvalidation(sudoku)
         validateSudoku(list1)

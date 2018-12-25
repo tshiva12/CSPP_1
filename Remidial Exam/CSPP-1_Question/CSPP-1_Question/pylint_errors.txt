@@ -1,13 +1,13 @@
 ************* Module Data
 Data.py:20:41: C0303: Trailing whitespace (trailing-whitespace)
 Data.py:26:0: W0311: Bad indentation. Found 11 spaces, expected 12 (bad-indentation)
-Data.py:74:24: C0326: Exactly one space required after comma
+Data.py:75:24: C0326: Exactly one space required after comma
         for i in range(0,81,9):
                         ^ (bad-whitespace)
-Data.py:74:27: C0326: Exactly one space required after comma
+Data.py:75:27: C0326: Exactly one space required after comma
         for i in range(0,81,9):
                            ^ (bad-whitespace)
-Data.py:76:28: C0326: Exactly one space required after comma
+Data.py:77:28: C0326: Exactly one space required after comma
             for j in range(0,9):
                             ^ (bad-whitespace)
 Data.py:1:0: C0103: Module name "Data" doesn't conform to snake_case naming style (invalid-name)
@@ -34,9 +34,9 @@ Data.py:67:0: C0111: Missing function docstring (missing-docstring)
 Data.py:83:11: W0703: Catching too general exception Exception (broad-except)
 Data.py:81:12: E1111: Assigning to function call which doesn't return (assignment-from-no-return)
 Data.py:83:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
-Data.py:76:16: W0612: Unused variable 'j' (unused-variable)
+Data.py:77:16: W0612: Unused variable 'j' (unused-variable)
 Data.py:81:12: W0612: Unused variable 'exc' (unused-variable)
 
------------------------------------
-Your code has been rated at 1.88/10
+------------------------------------------------------------------
+Your code has been rated at 2.04/10 (previous run: 1.88/10, +0.17)
 
