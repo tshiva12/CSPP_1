@@ -1,68 +1,42 @@
-************* Module sudoko
-sudoko.py:2:9: C0326: Exactly one space required before assignment
-    list1= set()
-         ^ (bad-whitespace)
-sudoko.py:15:55: C0326: No space allowed before :
-    if row >= 0 and row <= 2 and col >= 0 and col <= 2 :
-                                                       ^ (bad-whitespace)
-sudoko.py:21:55: C0326: No space allowed before :
-    if row >= 0 and row <= 2 and col >= 3 and col <= 5 :
-                                                       ^ (bad-whitespace)
-sudoko.py:27:55: C0326: No space allowed before :
-    if row >= 0 and row <= 2 and col >= 6 and col <= 8 :
-                                                       ^ (bad-whitespace)
-sudoko.py:33:55: C0326: No space allowed before :
-    if row >= 3 and row <= 5 and col >= 0 and col <= 2 :
-                                                       ^ (bad-whitespace)
-sudoko.py:38:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:39:55: C0326: No space allowed before :
-    if row >= 3 and row <= 5 and col >= 3 and col <= 5 :
-                                                       ^ (bad-whitespace)
-sudoko.py:45:55: C0326: No space allowed before :
-    if row >= 3 and row <= 5 and col >= 6 and col <= 8 :
-                                                       ^ (bad-whitespace)
-sudoko.py:51:55: C0326: No space allowed before :
-    if row >= 6 and row <= 8 and col >= 0 and col <= 2 :
-                                                       ^ (bad-whitespace)
-sudoko.py:57:55: C0326: No space allowed before :
-    if row >= 6 and row <= 8 and col >= 3 and col <= 5 :
-                                                       ^ (bad-whitespace)
-sudoko.py:63:55: C0326: No space allowed before :
-    if row >= 6 and row <= 8 and col >= 6 and col <= 8 :
-                                                       ^ (bad-whitespace)
-sudoko.py:85:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:86:56: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:90:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
-sudoko.py:93:13: C0326: Exactly one space required around assignment
-        count=0
-             ^ (bad-whitespace)
-sudoko.py:105:29: C0326: Exactly one space required after comparison
-        if (count != 0 and k ==81):
-                             ^^ (bad-whitespace)
-sudoko.py:114:11: C0326: Exactly one space required around comparison
-if __name__=="__main__":
-           ^^ (bad-whitespace)
-sudoko.py:116:0: C0303: Trailing whitespace (trailing-whitespace)
-sudoko.py:117:0: C0305: Trailing newlines (trailing-newlines)
-sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
-sudoko.py:1:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:13:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:15:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:21:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:27:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:33:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:39:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:45:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:51:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:57:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:63:7: R1716: Simplify chained comparison between the operands (chained-comparison)
-sudoko.py:13:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-sudoko.py:13:0: R0911: Too many return statements (9/6) (too-many-return-statements)
-sudoko.py:13:0: R0912: Too many branches (27/12) (too-many-branches)
-sudoko.py:69:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:77:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
-sudoko.py:84:0: C0111: Missing function docstring (missing-docstring)
+************* Module Data
+Data.py:20:41: C0303: Trailing whitespace (trailing-whitespace)
+Data.py:26:0: W0311: Bad indentation. Found 11 spaces, expected 12 (bad-indentation)
+Data.py:74:24: C0326: Exactly one space required after comma
+        for i in range(0,81,9):
+                        ^ (bad-whitespace)
+Data.py:74:27: C0326: Exactly one space required after comma
+        for i in range(0,81,9):
+                           ^ (bad-whitespace)
+Data.py:76:28: C0326: Exactly one space required after comma
+            for j in range(0,9):
+                            ^ (bad-whitespace)
+Data.py:1:0: C0103: Module name "Data" doesn't conform to snake_case naming style (invalid-name)
+Data.py:11:0: C0111: Missing function docstring (missing-docstring)
+Data.py:17:0: C0103: Function name "validateSudoku" doesn't conform to snake_case naming style (invalid-name)
+Data.py:17:0: C0111: Missing function docstring (missing-docstring)
+Data.py:20:8: E1111: Assigning to function call which doesn't return (assignment-from-no-return)
+Data.py:31:-1: W0105: String statement has no effect (pointless-string-statement)
+Data.py:32:0: C0103: Function name "getRowValues" doesn't conform to snake_case naming style (invalid-name)
+Data.py:32:0: C0111: Missing function docstring (missing-docstring)
+Data.py:42:-1: W0105: String statement has no effect (pointless-string-statement)
+Data.py:43:0: C0103: Function name "getColumnValues" doesn't conform to snake_case naming style (invalid-name)
+Data.py:43:0: C0111: Missing function docstring (missing-docstring)
+Data.py:43:20: W0613: Unused argument 'cell' (unused-argument)
+Data.py:43:26: W0613: Unused argument 'sudoku' (unused-argument)
+Data.py:53:-1: W0105: String statement has no effect (pointless-string-statement)
+Data.py:54:0: C0103: Function name "getGridValues" doesn't conform to snake_case naming style (invalid-name)
+Data.py:54:0: C0111: Missing function docstring (missing-docstring)
+Data.py:60:-1: W0105: String statement has no effect (pointless-string-statement)
+Data.py:61:0: C0103: Function name "possibleValues" doesn't conform to snake_case naming style (invalid-name)
+Data.py:61:0: C0111: Missing function docstring (missing-docstring)
+Data.py:66:-1: W0105: String statement has no effect (pointless-string-statement)
+Data.py:67:0: C0111: Missing function docstring (missing-docstring)
+Data.py:83:11: W0703: Catching too general exception Exception (broad-except)
+Data.py:81:12: E1111: Assigning to function call which doesn't return (assignment-from-no-return)
+Data.py:83:4: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+Data.py:76:16: W0612: Unused variable 'j' (unused-variable)
+Data.py:81:12: W0612: Unused variable 'exc' (unused-variable)
 
-------------------------------------------------------------------
-Your code has been rated at 5.80/10 (previous run: 5.80/10, +0.00)
+-----------------------------------
+Your code has been rated at 1.88/10
 
