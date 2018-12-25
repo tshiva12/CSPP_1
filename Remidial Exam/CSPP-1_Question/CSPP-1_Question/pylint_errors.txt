@@ -38,5 +38,5 @@ Data.py:76:16: W0612: Unused variable 'j' (unused-variable)
 Data.py:81:12: W0612: Unused variable 'exc' (unused-variable)
 
 ------------------------------------------------------------------
-Your code has been rated at 1.88/10 (previous run: 2.04/10, -0.17)
+Your code has been rated at 1.88/10 (previous run: 1.88/10, +0.00)
 
